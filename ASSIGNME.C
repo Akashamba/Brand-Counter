@@ -88,6 +88,12 @@ void delete()
 	fflush(stdin);
 	gets(del);
 
+	if(islower(del[0]))
+	{
+	del[0]=del[0]-32;
+	}
+
+
 	if(strcmp(start->data,del)==0)
 	{
 		temp=start;
